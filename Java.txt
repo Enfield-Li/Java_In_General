@@ -1,0 +1,17 @@
+// Java
+// High level muti-paradim language
+// capable of compile to platform-indepedent byte code without recompiling
+// which made possible by interpreter Java Virtual Machine(JVM)
+// and comupter only need Java Runtime Environment(JRE)
+// write once and run anywhere
+
+// static: A member of a class, belongs to type, as opposed to the instance of a class
+
+// JVM exist in RAM
+// .java file compile to .class file which consist byte code
+// JVM Class_Loader > Byte_Code_Verifier > Excution_Engine
+// Just_In_Time compiling
+
+// Compilation => platform dependent thus faster
+// Interpretation => platform independent thus slower
+// Java uses both
