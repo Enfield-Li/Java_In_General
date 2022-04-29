@@ -53,6 +53,21 @@ public class App {
     twoDList.add("two");
     twoDList.add("three");
 
-    System.out.println(twoDList);
+    List<String> twoDList2 = new ArrayList<>();
+    twoDList2.add("four");
+    twoDList2.add("five");
+    twoDList2.add("six");
+
+    List<String> twoDList3 = new ArrayList<>();
+    twoDList3.add("seven");
+    twoDList3.add("eight");
+
+    List<List<String>> combined = new ArrayList<>();
+    combined.add(twoDList);
+    combined.add(twoDList2);
+    combined.add(twoDList3);
+
+    System.out.println(combined);
+    System.out.println(combined.get(0).get(1));
   }
 }
