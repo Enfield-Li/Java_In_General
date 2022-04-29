@@ -27,9 +27,9 @@ public class App {
 
     // ** Operations **
     // access
-    System.out.println(arr[0] + arr.length);
-    System.out.println(arrList1.get(1) + arrList1.size());
-    System.out.println(list.get(0));
+    // System.out.println(arr[0] + arr.length);
+    // System.out.println(arrList1.get(1) + arrList1.size());
+    // System.out.println(list.get(0));
 
     // add
     arrList1.add("ar3");
@@ -42,9 +42,9 @@ public class App {
     // delete
     arrList1.remove(0);
 
-    System.out.println(list); // print raw element
-    System.out.println(arr2); // print memory
-    System.out.println(arrList1); // print element with toString/loop
+    // System.out.println(list); // print raw element
+    // System.out.println(arr2); // print memory
+    // System.out.println(arrList1); // print element with toString/loop
     // ArrayList<String> arrList2 = Arrays.asList("akldf", "skzdf"); // Immutable list
 
     // ** 2D ArrayList **
@@ -69,5 +69,23 @@ public class App {
 
     System.out.println(combined);
     System.out.println(combined.get(0).get(1));
+    System.out.println("-- 2d list and get one element --");
+
+    for (int i = 0; i < twoDList.size(); i++) {
+      System.out.println(twoDList.get(i));
+    }
+    System.out.println("-- traditional for loop --");
+
+    for (String i : twoDList) {
+      System.out.println(i);
+    }
+    System.out.println("-- foreach loop --");
+
+    for (List<String> innerList : combined) {
+      for (String item : innerList) {
+        System.out.println(item);
+      }
+    }
+    System.out.println("-- 2d foreach loop --");
   }
 }
