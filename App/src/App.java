@@ -1,20 +1,22 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import javax.swing.JOptionPane;
 
 public class App {
 
   public static void main(String[] args) {
-    
     // ** Array **
     // Fixed length hold primitives or objects
     String[] arr = new String[4];
     String[] arr2 = { "arr0", "arr1" };
     List<String> list = Arrays.asList("list1", "list2");
 
-    System.out.println(arr.toString());
+    // ** List **
+    List<String> list2 = new ArrayList<>(
+      Arrays.asList("11", "22") // mutable list
+    );
+    list2.add("e");
 
     // ** ArrayList **
     // Not fixed length hold only objects(Wrapper class) not primitives
@@ -23,11 +25,11 @@ public class App {
       Arrays.asList("al1", "al2") // mutable list
     );
 
-    // ** List **
-
+    // ** Operations **
     // access
     System.out.println(arr[0] + arr.length);
     System.out.println(arrList1.get(1) + arrList1.size());
+    System.out.println(list.get(0));
 
     // add
     arrList1.add("ar3");
@@ -44,5 +46,12 @@ public class App {
     System.out.println(arr2); // print memory
     System.out.println(arrList1); // print element with toString/loop
     // ArrayList<String> arrList2 = Arrays.asList("akldf", "skzdf"); // Immutable list
+    list.set(0, "update 0 index");
+
+    // delete
+    arrList1.remove(0);
+
+    System.out.println(list); // print raw element
+    System.out.println(arr2); // print memory
   }
 }
