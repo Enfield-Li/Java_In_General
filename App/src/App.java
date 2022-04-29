@@ -3,14 +3,14 @@ import java.util.Random;
 public class App {
 
   public static void main(String[] args) {
-    Random random = new Random();
+    // $ [flags] [precision] [width] [conversion-character]
 
-    int x = random.nextInt(2);
-    double y = random.nextDouble();
-    boolean z = random.nextBoolean();
+    boolean myBool = true; // %b
+    char myChar = '@';     // %c
+    String myStr = "afs";  // %s
+    int myInt = 10;        // %d
+    double myDb = 11000;   // %f   for float and double
 
-    System.out.println(x);
-    System.out.println(y);
-    System.out.println(z);
+    System.out.printf("%d here", 123);
   }
 }
