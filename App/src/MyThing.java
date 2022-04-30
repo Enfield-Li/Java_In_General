@@ -1,4 +1,6 @@
-public class MyThing<T, V> {
+public class MyThing<T extends Number, V> {
+
+  // extends makes sure only accept number data type
 
   private T x;
   private V y;
