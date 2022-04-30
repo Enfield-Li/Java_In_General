@@ -3,6 +3,7 @@ import java.util.Random;
 public class App {
 
   public static void main(String[] args) {
-    System.out.println("hello");
+    Hero hero = new Hero("batman", 38, "rich");
+    System.out.println(hero);
   }
 }
