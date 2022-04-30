@@ -12,11 +12,19 @@ public class App {
     displayArr(intArr);
     displayArr(strArr);
     displayArr(dbArr);
+
+    getFirst(intArr);
+    getFirst(strArr);
+    getFirst(dbArr);
   }
 
   public static <T> void displayArr(T[] arr) {
     for (T x : arr) {
       System.out.println(x);
     }
+  }
+
+  public static <T> T getFirst(T[] arr) {
+    return arr[0];
   }
 }
