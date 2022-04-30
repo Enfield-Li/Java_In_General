@@ -20,8 +20,10 @@ public class App {
     System.out.println(myInt.getValue());
 
     // generic
-    MyThing<Integer> myThing = new MyThing<>(22);
+    MyThing<Integer, String> myThing = new MyThing<>(22, "22");
     System.out.println(myThing.getValue());
+
+    MyThing<Integer, Long> myThing2 = new MyThing<>(22, 22L);
   }
 
   public static <T> void displayArr(T[] arr) {
