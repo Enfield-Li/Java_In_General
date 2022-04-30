@@ -1,10 +1,7 @@
-import java.awt.Color;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-
 public class App {
 
   public static void main(String[] args) {
+    // generic method
     Integer[] intArr = { 1, 2, 3 };
     String[] strArr = { "1", "2", "3" };
     Double[] dbArr = { 1.0, 2.0, 3.0 };
@@ -16,6 +13,15 @@ public class App {
     getFirst(intArr);
     getFirst(strArr);
     getFirst(dbArr);
+
+    // generic class
+    // normal
+    MyInt myInt = new MyInt(11);
+    System.out.println(myInt.getValue());
+
+    // generic
+    MyThing<Integer> myThing = new MyThing<>(22);
+    System.out.println(myThing.getValue());
   }
 
   public static <T> void displayArr(T[] arr) {
