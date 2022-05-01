@@ -15,11 +15,13 @@ public class App {
     // hMap.remove("personThree");
 
     // System.out.println(hMap);
-    // System.out.println(hMap.get("personOne"));
-
-    for (Integer i : hMap.keySet()) {
-      System.out.println(i);
-      System.out.println(hMap.get(i));
-    }
+    // System.out.println(hMap.get("personOne".hashCode()));
+    // System.out.println(hMap.containsKey("personTwo1".hashCode()));
+    // System.out.println(hMap.containsValue("name222"));
+    
+    // for (Integer i : hMap.keySet()) {
+    //   System.out.println(i);
+    //   System.out.println(hMap.get(i));
+    // }
   }
 }
