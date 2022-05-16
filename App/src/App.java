@@ -1,7 +1,8 @@
 public class App {
 
   public static void main(String[] args) {
-    System.out.println("aldkf");
-    System.exit(0);
+    IDandPasswords idandPasswords = new IDandPasswords();
+				
+		LoginPage loginPage = new LoginPage(idandPasswords.getLoginInfo());
   }
 }
